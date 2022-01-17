@@ -1,19 +1,24 @@
+enum GenderType {
+  Male = 'male',
+  Female = 'female',
+  genderNeutral = 'genderNeutral'
+}
 interface Student {
-  readonly studentID: number;
-  studentName: string;
-  age?: number;
-  gender: string;
-  subject: string;
-  courseCompleted: boolean;
+  readonly studentID: number,
+  studentName: string,
+  age?: number,
+  gender: 'male' | 'female' | 'genderNeutral', // auto complete 가능하게 해줌
+  subject: string,
+  courseCompleted: boolean,
   // addComment (comment: string): string;
-  addComment?: (comment: string) => string;
+  addComment?: (comment: string) => string
 }
 
 let student1 = {
   studentID: 123123,
   studentName: 'jackson',
   age: 30,
-  gender: 'male',
+  gender: 'female',
   subject: 'MongoDB',
   courseCompleted: false
 }
@@ -24,7 +29,7 @@ function getStudentDetails(studentID: number): Student
     studentID: 12345,
     studentName: 'shin',
     age: 21,
-    gender: 'female',
+    gender: 'male',
     subject: 'javascript',
     courseCompleted: false
   };
