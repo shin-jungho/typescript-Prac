@@ -2,9 +2,7 @@
     "compilerOptions": {
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "commonjs",  
-    "plugins": [
-      { "name": "typescript-tslint-plugin" }
-    ],                              /* Specify what module code is generated. */
+                                 /* Specify what module code is generated. */
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Projects */

@@ -25,4 +25,4 @@ function getStudentDetails(studentID) {
 function saveStudentDetails(student) {
     // student.studentID= 11222;  읽기 전용이라 프로퍼티 읽히지 않는다.
 }
-saveStudentDetails(student1);
+// saveStudentDetails(student1);
